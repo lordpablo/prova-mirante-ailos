@@ -7,6 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="Scrutor" Version="5.0.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
 	<PackageReference Include="Dapper" Version="2.0.35" />
 	<PackageReference Include="Microsoft.Data.Sqlite" Version="3.1.6" />
@@ -34,16 +36,12 @@
   <ItemGroup>
     <Folder Include="Application\Commands\Requests\" />
     <Folder Include="Application\Commands\Responses\" />
-    <Folder Include="Application\Handlers\" />
     <Folder Include="Application\Queries\Requests\" />
     <Folder Include="Application\Queries\Responses\" />
-    <Folder Include="Domain\Entities\" />
     <Folder Include="Domain\Enumerators\" />
     <Folder Include="Domain\Language\" />
     <Folder Include="Infrastructure\Database\CommandStore\Requests\" />
     <Folder Include="Infrastructure\Database\CommandStore\Responses\" />
-    <Folder Include="Infrastructure\Database\QueryStore\Requests\" />
-    <Folder Include="Infrastructure\Database\QueryStore\Responses\" />
   </ItemGroup>
 
 </Project>

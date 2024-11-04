@@ -19,7 +19,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Questao4", "Questao4", "{D7
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Questao5", "Questao5\Questao5.csproj", "{7B665AB7-6063-4EA5-A851-E41DBBE01242}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Questoes.Infra", "Questoes.Infra\Questoes.Infra.csproj", "{05B86E30-DDB2-4E7C-8A5B-13427E0D18B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Questoes.Infra", "Questoes.Infra\Questoes.Infra.csproj", "{05B86E30-DDB2-4E7C-8A5B-13427E0D18B9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D4FFC0E6-43E6-4269-9B45-71D37A0C469F}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

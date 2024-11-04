@@ -1,4 +1,5 @@
 using MediatR;
+using Questao5.Infrastructure.Database;
 using Questao5.Infrastructure.Sqlite;
 using System.Reflection;
 
@@ -25,6 +26,13 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+builder.Services.Scan(scan => scan
+    .FromAssemblyOf<BaseRepository>()
+    .AddClasses()
+    .AsImplementedInterfaces()
+    .WithScopedLifetime());
+
 
 app.UseHttpsRedirection();
 
