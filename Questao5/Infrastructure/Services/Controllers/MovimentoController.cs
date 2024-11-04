@@ -6,19 +6,19 @@ namespace Questao5.Infrastructure.Services.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class ContaCorrenteController : ControllerBase
+    public class MovimentoController : ControllerBase
     {
 
-        private readonly ILogger<ContaCorrenteController> _logger;
+        private readonly ILogger<MovimentoController> _logger;
         private readonly IMediator _mediator;
 
-        public ContaCorrenteController(ILogger<ContaCorrenteController> logger, IMediator mediator)
+        public MovimentoController(ILogger<MovimentoController> logger, IMediator mediator)
         {
             _logger = logger;
             _mediator = mediator;
         }
 
-        [HttpGet(Name = "GetSaldoContaCorrente")]
+        [HttpPost(Name = "PostMovimentoCC")]
         public async Task<IActionResult> Get(ConsultaSaldoRequest request)
         {
             //return await Task.FromResult(_mediator.Send(request));

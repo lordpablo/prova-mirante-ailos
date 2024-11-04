@@ -40,8 +40,6 @@
     <Folder Include="Application\Queries\Responses\" />
     <Folder Include="Domain\Enumerators\" />
     <Folder Include="Domain\Language\" />
-    <Folder Include="Infrastructure\Database\CommandStore\Requests\" />
-    <Folder Include="Infrastructure\Database\CommandStore\Responses\" />
   </ItemGroup>
 
 </Project>
